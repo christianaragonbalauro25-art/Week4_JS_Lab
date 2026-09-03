@@ -1,6 +1,6 @@
 function updateTitle() {
     let now = new Date();
-    let timeString = now.toLocaleTimeString();
+    let timeString = now.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true });
     document.getElementById("heading").innerText
 = `Current Time: ${timeString}`;
 }
@@ -42,4 +42,29 @@ function(event) {
 {
         event.target.parentElement.remove();
     }
+});
+
+document.getElementById("contactForm").addEventListener("submit",
+function(event) {
+    event.preventDefault();
+    let email = document.getElementById("email").value;
+    let modal = document.getElementById("modal");
+    let modalMessage = document.getElementById("modalMessage");
+ 
+    if (!email.includes("@"))
+{
+        modalMessage.innerText
+= "Invalid email format!";
+    } else {
+        modalMessage.innerText
+= "Form Submitted Successfully!";
+    }
+    modal.style.display = "block";
+});
+ 
+// Close Modal
+document.getElementById("closeModal").addEventListener("click",
+function() {
+    document.getElementById("modal").style.display
+= "none";
 });

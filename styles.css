@@ -89,10 +89,9 @@ button {
 
 button:hover {
     background-color: #000000;
+    color:
 }
 
-button:hover {
-    background-color: #d4af37;
 
 footer {
     text-align: center;
@@ -100,6 +99,8 @@ footer {
     background-color: #000000;
     color: #ffffff;
 }
+
+
 
 @media (max-width: 768px) {  
     header, footer {

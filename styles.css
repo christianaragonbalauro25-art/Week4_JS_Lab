@@ -89,7 +89,7 @@ button {
 
 button:hover {
     background-color: #000000;
-    color:
+    color: #d4af37;
 }
 
 
@@ -98,9 +98,26 @@ footer {
     padding: 20px;
     background-color: #000000;
     color: #ffffff;
+} 
+
+heading {
+    text-align: center;
 }
 
+themeToggle {
+    display: block;
+    margin: 0 auto 10px;
+}
 
+taskInput {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+addTask {
+    display: block;
+    margin: 0 auto 10px;
+}
 
 @media (max-width: 768px) {  
     header, footer {

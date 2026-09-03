@@ -9,15 +9,14 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
 }
-
 .modal {
     display: none;
     position: fixed;
@@ -25,12 +24,12 @@ header {
     left: 50%;
     transform: translate(-50%,
 -50%);
-    background: white;
+    background: #ffffff;
+    color: #000000;
     padding: 20px;
     box-shadow: 0px 0px 10px
 gray;
 }
-
 
 nav ul {
     list-style: none;
@@ -39,7 +38,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -48,19 +47,20 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #d4af37;;
 }
 
 
 main {
-    padding: 20px;
+    padding: 30px;
 }
 
 section {
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    color: #000;
+    border: 1px solid #d4af37;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -71,28 +71,30 @@ form {
 
 input, textarea, button {
     margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
 button {
-    background-color: #007bff;
-    color: white;
+    background-color: #d4af37;
+    color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #000000;
 }
 
+button:hover {
+    background-color: #d4af37;
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
